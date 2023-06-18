@@ -1182,5 +1182,31 @@ margin-left: 16px;}
     .customers {
         padding-bottom: 120px;
         padding-top: 120px;}
+/* ____________________________FOOTER____________________________________ */
+.container-social-footer{display: flex;}
 
+.container-logo-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 0;
+    gap: 0;
+margin-right: 120px;}
+
+    .container-footer-social{
+        margin-bottom: 0;
+        align-items: start;
+        margin-right: 80px;
+    }
+.footer-container-form{
+    align-items: start;
+    }
+    .footer-form{
+        align-items: start;
+        flex-direction: row;
+        width: 100%;
+        gap: 24px;}
+.footer-form-input{
+    width: 264px;
+}
 }
