@@ -1158,6 +1158,10 @@ margin-left: 16px;}
     width: 264px;}
 }
 
+.menu-link.current::after{
+    bottom: -35px;
+}
+
 /* __________________+++++________________________DESKTOP______________+++++___________________*/
 @media screen and (min-width:1158px) {
     .container{
@@ -1238,5 +1242,9 @@ margin-right: 120px;}
         gap: 24px;}
 .footer-form-input{
     width: 264px;
+}
+
+.menu-link.current::after{
+    bottom: -25px;
 }
 }
