@@ -93,8 +93,7 @@ padding: 0;}
 
 .page-nav{display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 24px;}
+    justify-content: space-between;}
 
 .page-header{
     padding-top: 24px;
@@ -195,7 +194,10 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 }
 
 .mobile-menu-container{
+    display: flex;
+    flex-direction: column;
     position: relative;
+    height: 100%;
     padding-top: 80px;
     padding-bottom: 40px;
     padding-left: 24px;
@@ -268,7 +270,7 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-left: 0;
     text-decoration:none;
     gap: 40px;
-    margin-bottom: 284px;
+    margin-bottom: auto;
 }
 
 
@@ -334,6 +336,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .social-list-mobile{display: flex;
     justify-content: space-between;
+    
     }
 
 
@@ -341,14 +344,22 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 /*---------------------------HERO ---------------------------*/
 
 .hero{max-width: 100%;
-padding-top: 188px;
-padding-bottom: 188px;
+padding-top: 112px;
+padding-bottom: 112px;
 margin-left: auto;
 margin-right: auto;
 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mobile.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-mobile@2x.jpg);
+}
+}
 
 .hero-title {max-width: 496px;
 margin-left: auto;
@@ -700,7 +711,7 @@ visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-width: 408px;
+width: 100%;
 min-height: 584px;
 background: #FCFCFC;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1030,7 +1041,6 @@ margin-left: 16px;}
     display: none;}
 
     .modal {
-        width: 392px;
         padding: 72px 16px 24px 16px;}
 
     .title{
@@ -1060,6 +1070,12 @@ margin-left: 16px;}
 
 }
 
+@media screen  and (min-width:428px) {
+    .modal {
+        width: 392px;}
+}
+
+
 
 
 /* ___________________+++++_________TABLET__________+++++__________________ */
@@ -1079,9 +1095,21 @@ margin-left: 16px;}
     .page-header {
         padding-top: 16px;
         padding-bottom: 16px;}
+
+        .address-link{
+            font-size: 12px;
+        }
+
+        .modal {
+            width: 408px;}
 /* _______________________HERO_________________________ */
 .hero{background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet.jpg);}
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero{
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet@2x.jpg);}}
 
 /* _______________________SECTION-2_________________________ */
     .page-nav-item{
@@ -1156,10 +1184,11 @@ margin-left: 16px;}
 
 .footer-form-label {
     width: 264px;}
-}
+
 
 .menu-link.current::after{
-    bottom: -35px;
+    bottom: -30px;
+}
 }
 
 /* __________________+++++________________________DESKTOP______________+++++___________________*/
@@ -1177,10 +1206,23 @@ margin-left: 16px;}
         gap: 40px;
         display: flex;
         flex-direction: row;}
+
+        .modal {
+            width: 408px;}
 /* _________________________HERO_______________________ */
 
-    .hero{background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop.jpg);}
+    .hero{background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop.jpg);
+            padding-top: 188px;
+            padding-bottom: 188px;}
 
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .hero{
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop@2x.jpg);
+            }
+            }
 /*________________________ SECTION-2 _______________________*/
     .section-text{
         padding-top: 120px;
