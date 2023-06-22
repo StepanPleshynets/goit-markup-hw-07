@@ -302,7 +302,7 @@ margin-bottom: 56px;}
     font-family: 'Roboto',sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 28px;
+font-size: 24px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
@@ -378,7 +378,7 @@ color:var(--white-color);}
 .hero-btn{display: block;
     min-width: 169px;
     height: 56px;
-    margin-top: 48px;
+    margin-top: 72px;
     margin-left: auto;
     margin-right: auto;
     padding: 16px 32px;
@@ -1043,6 +1043,10 @@ margin-left: 16px;}
     .modal {
         padding: 72px 16px 24px 16px;}
 
+        .mobile-menu-container {
+            padding-left: 24px;
+        }
+
     .title{
     font-style: normal;
     font-weight: 700;
@@ -1066,13 +1070,16 @@ margin-left: 16px;}
     row-gap: 72px;}
 /* ________________________SECTION-5_______________________________ */
 
-
+.customers-list {
+    row-gap: 72px;
 
 }
-
+}
 @media screen  and (min-width:428px) {
     .modal {
         width: 392px;}
+
+    .address-link-mobile-tel {font-size: 36px;}
 }
 
 
@@ -1110,6 +1117,8 @@ margin-left: 16px;}
 (min-resolution: 2dppx) {
 .hero{
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-tablet@2x.jpg);}}
+
+    .hero-btn {margin-top: 36px;}
 
 /* _______________________SECTION-2_________________________ */
     .page-nav-item{
@@ -1190,7 +1199,6 @@ margin-left: 16px;}
     bottom: -30px;
 }
 }
-
 /* __________________+++++________________________DESKTOP______________+++++___________________*/
 @media screen and (min-width:1158px) {
     .container{
@@ -1223,6 +1231,7 @@ margin-left: 16px;}
                 background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-desktop@2x.jpg);
             }
             }
+            .hero-btn {margin-top: 48px;}
 /*________________________ SECTION-2 _______________________*/
     .section-text{
         padding-top: 120px;
